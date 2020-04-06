@@ -1,0 +1,63 @@
+{
+  "propsSchema": {
+    "type": "object",
+    "properties": {
+      "shape": {
+        "title": "形状",
+        "type": "object",
+        "properties": {
+          "width": {
+            "title": "宽度",
+            "description": "1 - 1000",
+            "type": "number",
+            "default": 1000,
+            "min": 1,
+            "max": 1000
+          },
+          "height": {
+            "title": "高度",
+            "description": "1 - 1000",
+            "type": "number",
+            "default": 500,
+            "min": 1,
+            "max": 1000
+          },
+          "angle": {
+            "title": "角度",
+            "description": "1 - 359",
+            "type": "number",
+            "default": 45,
+            "min": 1,
+            "max": 359
+          },
+          "radius": {
+            "title": "半径",
+            "description": "1 - 100",
+            "type": "number",
+            "default": 50,
+            "min": 1,
+            "max": 100
+          }
+        }
+      },
+      "style": {
+        "title": "样式",
+        "type": "object",
+        "properties": {
+          "stroke": {
+            "title": "线条颜色",
+            "type": "string",
+            "default": "#000000",
+            "format": "color"
+          },
+          "fill": {
+            "title": "填充色",
+            "type": "string",
+            "default": "#FF0000",
+            "format": "color"
+          }
+        }
+      }
+    }
+  }
+}
